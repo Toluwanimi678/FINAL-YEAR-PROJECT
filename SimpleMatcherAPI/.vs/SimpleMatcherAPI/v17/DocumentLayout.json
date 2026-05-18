@@ -1,0 +1,320 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|c:\\users\\tolua\\desktop\\fyp code\\simplematcherapi\\controllers\\matchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|solutionrelative:controllers\\matchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|c:\\users\\tolua\\desktop\\fyp code\\simplematcherapi\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|solutionrelative:controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|c:\\users\\tolua\\desktop\\fyp code\\simplematcherapi\\models\\artistprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|solutionrelative:models\\artistprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|c:\\users\\tolua\\desktop\\fyp code\\simplematcherapi\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|solutionrelative:models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|c:\\users\\tolua\\desktop\\fyp code\\simplematcherapi\\controllers\\authcontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|solutionrelative:controllers\\authcontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|c:\\users\\tolua\\desktop\\fyp code\\simplematcherapi\\models\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|solutionrelative:models\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|c:\\users\\tolua\\desktop\\fyp code\\simplematcherapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|c:\\users\\tolua\\desktop\\fyp code\\simplematcherapi\\services\\clientrequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|solutionrelative:services\\clientrequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|c:\\users\\tolua\\desktop\\fyp code\\simplematcherapi\\controllers\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|solutionrelative:controllers\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|c:\\users\\tolua\\desktop\\fyp code\\simplematcherapi\\models\\clientrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|solutionrelative:models\\clientrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|c:\\users\\tolua\\desktop\\fyp code\\simplematcherapi\\services\\mongoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|solutionrelative:services\\mongoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|c:\\users\\tolua\\desktop\\fyp code\\simplematcherapi\\services\\artistprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|solutionrelative:services\\artistprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|c:\\users\\tolua\\desktop\\fyp code\\simplematcherapi\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|solutionrelative:models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|c:\\users\\tolua\\desktop\\fyp code\\simplematcherapi\\controllers\\artistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|solutionrelative:controllers\\artistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|c:\\users\\tolua\\desktop\\fyp code\\simplematcherapi\\controllers\\artistprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|solutionrelative:controllers\\artistprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|c:\\users\\tolua\\desktop\\fyp code\\simplematcherapi\\appsettings.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|solutionrelative:appsettings.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|c:\\users\\tolua\\desktop\\fyp code\\simplematcherapi\\models\\artist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|solutionrelative:models\\artist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|c:\\users\\tolua\\desktop\\fyp code\\simplematcherapi\\data\\datastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20EFF241-8CE2-57AF-1EE4-78745C51AF45}|SimpleMatcherAPI.csproj|solutionrelative:data\\datastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Models\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "Models\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Models\\LoginRequest.cs",
+              "RelativeToolTip": "Models\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T14:20:34.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthContoller.cs",
+              "DocumentMoniker": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Controllers\\AuthContoller.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthContoller.cs",
+              "ToolTip": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Controllers\\AuthContoller.cs",
+              "RelativeToolTip": "Controllers\\AuthContoller.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T14:19:42.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ArtistProfileService.cs",
+              "DocumentMoniker": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Services\\ArtistProfileService.cs",
+              "RelativeDocumentMoniker": "Services\\ArtistProfileService.cs",
+              "ToolTip": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Services\\ArtistProfileService.cs",
+              "RelativeToolTip": "Services\\ArtistProfileService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-13T04:45:45.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ClientRequestService.cs",
+              "DocumentMoniker": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Services\\ClientRequestService.cs",
+              "RelativeDocumentMoniker": "Services\\ClientRequestService.cs",
+              "ToolTip": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Services\\ClientRequestService.cs",
+              "RelativeToolTip": "Services\\ClientRequestService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-13T04:44:49.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RequestController.cs",
+              "DocumentMoniker": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Controllers\\RequestController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RequestController.cs",
+              "ToolTip": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Controllers\\RequestController.cs",
+              "RelativeToolTip": "Controllers\\RequestController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-13T04:27:38.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ArtistProfile.cs",
+              "DocumentMoniker": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Models\\ArtistProfile.cs",
+              "RelativeDocumentMoniker": "Models\\ArtistProfile.cs",
+              "ToolTip": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Models\\ArtistProfile.cs",
+              "RelativeToolTip": "Models\\ArtistProfile.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAwwCoAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T05:31:39.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MatchController.cs",
+              "DocumentMoniker": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Controllers\\MatchController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MatchController.cs",
+              "ToolTip": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Controllers\\MatchController.cs",
+              "RelativeToolTip": "Controllers\\MatchController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAcwDYAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T05:38:18.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MongoService.cs",
+              "DocumentMoniker": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Services\\MongoService.cs",
+              "RelativeDocumentMoniker": "Services\\MongoService.cs",
+              "ToolTip": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Services\\MongoService.cs",
+              "RelativeToolTip": "Services\\MongoService.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAmwGcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T07:51:05.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClientController.cs",
+              "DocumentMoniker": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Controllers\\ClientController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ClientController.cs",
+              "ToolTip": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Controllers\\ClientController.cs",
+              "RelativeToolTip": "Controllers\\ClientController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAmwCQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-13T04:14:37.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ClientRequest.cs",
+              "DocumentMoniker": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Models\\ClientRequest.cs",
+              "RelativeDocumentMoniker": "Models\\ClientRequest.cs",
+              "ToolTip": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Models\\ClientRequest.cs",
+              "RelativeToolTip": "Models\\ClientRequest.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAcwCoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T09:01:33.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ArtistProfileController.cs",
+              "DocumentMoniker": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Controllers\\ArtistProfileController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ArtistProfileController.cs",
+              "ToolTip": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Controllers\\ArtistProfileController.cs",
+              "RelativeToolTip": "Controllers\\ArtistProfileController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T09:41:37.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "Models\\Client.cs",
+              "ToolTip": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Models\\Client.cs",
+              "RelativeToolTip": "Models\\Client.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T05:36:28.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-05T12:36:04.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAqwHkAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T05:05:31.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ArtistController.cs",
+              "DocumentMoniker": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Controllers\\ArtistController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ArtistController.cs",
+              "ToolTip": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Controllers\\ArtistController.cs",
+              "RelativeToolTip": "Controllers\\ArtistController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAADwvx0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T12:32:59.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Artist.cs",
+              "DocumentMoniker": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Models\\Artist.cs",
+              "RelativeDocumentMoniker": "Models\\Artist.cs",
+              "ToolTip": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Models\\Artist.cs",
+              "RelativeToolTip": "Models\\Artist.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA6wBIAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T05:35:25.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Match.cs",
+              "DocumentMoniker": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Models\\Match.cs",
+              "RelativeDocumentMoniker": "Models\\Match.cs",
+              "ToolTip": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Models\\Match.cs",
+              "RelativeToolTip": "Models\\Match.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T05:37:10.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DataStore.cs",
+              "DocumentMoniker": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Data\\DataStore.cs",
+              "RelativeDocumentMoniker": "Data\\DataStore.cs",
+              "ToolTip": "C:\\Users\\tolua\\Desktop\\FYP CODE\\SimpleMatcherAPI\\Data\\DataStore.cs",
+              "RelativeToolTip": "Data\\DataStore.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T05:34:53.236Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
