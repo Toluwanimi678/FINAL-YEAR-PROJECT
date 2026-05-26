@@ -25,27 +25,33 @@ export default function Signup() {
   setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
+  const storedClient = localStorage.getItem("client");
+  console.log("STORED CLIENT:", storedClient);
 
   try {
-    localStorage.setItem("user", JSON.stringify(form));
     if (role === "artist") {
       await signupArtist(form);
-      router.push("/pages/artist"); 
+      localStorage.setItem("artist", JSON.stringify({ // 👈 fix
+        username: form.username,
+        role: "artist"
+      }));
+      router.push("/pages/artist");
     } else {
       await addClient(form);
-      router.push(`/pages/client/${form.username}`);; 
+      localStorage.setItem("client", JSON.stringify({ // 👈 fix
+        username: form.username,
+        role: "client"
+      }));
+      router.push(`/pages/client/${form.username}`);
     }
 
     alert("Account created!");
   } catch (err) {
     console.error(err);
   }
-  if (!role) {
-    return <p>Loading...</p>;
-  }
-  };
+};
 
   return (
 
@@ -57,7 +63,7 @@ export default function Signup() {
     > 
     <div className="flex-1 bg-black/50 flex items-center justify-center px-4">
       
-      <div className="w-full max-w-md bg-white p-8 rounded-2xl shadow-xl">
+      <div className="w-full max-w-md bg-zinc-800 text-white p-8 rounded-2xl shadow-xl">
         
         <h1 className="text-2xl font-bold mb-2 text-center">
           Create Account
@@ -73,14 +79,14 @@ export default function Signup() {
             name="username"
             placeholder="Username"
             onChange={handleChange}
-            className="w-full border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
+            className="w-full border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-white"
           />
 
           <input
             name="email"
             placeholder="Email"
             onChange={handleChange}
-            className="w-full border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
+            className="w-full border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-white"
           />
 
           <input
@@ -88,14 +94,26 @@ export default function Signup() {
             type="password"
             placeholder="Password"
             onChange={handleChange}
-            className="w-full border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
+            className="w-full border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-white"
           />
 
-          <button className="w-full bg-black text-white py-3 rounded-lg hover:bg-gray-800 transition hover: cursor-pointer">
+          <button className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-800 transition hover: cursor-pointer">
             Sign Up
           </button>
 
         </form>
+        <div className="mt-9">
+          <div className="border-b "></div>
+          <div className="flex items-center flex-col space-y-7">
+            <h3 className="pt-4">Already have an account? Sign in!</h3>
+            <button className="w-1/2 bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-800 transition hover: cursor-pointer"
+            onClick = {() => router.push("/pages/sign-in")}
+            >
+              Sign In
+            </button>
+          </div>
+          
+        </div>
       </div>
 
     </div>

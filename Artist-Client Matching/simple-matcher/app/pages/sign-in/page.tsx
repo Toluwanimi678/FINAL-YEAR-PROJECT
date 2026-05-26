@@ -45,13 +45,32 @@ export default function SignInPage() {
 
       const data = await response.json();
 
-      alert("Login successful!");
+        alert("Login successful!");
 
-      if (form.role === "artist") {
-        router.push(`/pages/artist/${data.username}`);
-      } else {
-        router.push(`/pages/client/${data.username}`);
-      }
+        // 🔥 SAVE USER TO LOCALSTORAGE
+        if (form.role === "client") {
+          localStorage.removeItem("artist");
+          localStorage.setItem(
+            "client",
+            JSON.stringify({
+              username: data.username,
+              role: "client",
+            })
+          );
+          router.push(`/pages/client/${data.username}`);
+        }
+
+        if (form.role === "artist") {
+          localStorage.removeItem("artist");
+          localStorage.setItem(
+            "artist",
+            JSON.stringify({
+              username: data.username,
+              role: "artist",
+            })
+          );
+          router.push(`/pages/artist/${data.username}`);
+        }
     } catch (err) {
       console.error(err);
       alert("Invalid credentials");
@@ -107,6 +126,18 @@ export default function SignInPage() {
           </button>
 
         </form>
+        <div className="mt-9 text-white">
+          <div className="border-b "></div>
+          <div className="flex items-center flex-col space-y-7">
+            <h3 className="pt-4 ">Don't have an account? Create one!</h3>
+            <button className="w-1/2 bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-800 transition hover: cursor-pointer"
+            onClick = {() => router.push("/pages/sign-up")}
+            >
+              Sign Up
+            </button>
+          </div>
+          
+        </div>
       </div>
     </main>
   );

@@ -19,10 +19,10 @@ namespace SimpleMatcherAPI.Models
         public List<string>? Specification { get; set; }
 
         [BsonElement("minBudget")]
-        public int? MinBudget { get; set; }
+        public double? MinBudget { get; set; }
 
         [BsonElement("maxBudget")]
-        public int? MaxBudget { get; set; }
+        public double? MaxBudget { get; set; }
 
         [BsonElement("communication")]
         public List<string>? Communication { get; set; }
@@ -36,8 +36,8 @@ namespace SimpleMatcherAPI.Models
         [BsonElement("bio")]
         public string? Bio { get; set; }
 
-        [BsonElement("profileImage")]
-        public string? ProfileImage { get; set; }
+        [BsonElement("profilePicture")]
+        public string? ProfilePicture { get; set; }
 
         [BsonElement("artworkGallery")]
         public List<string>? ArtworkGallery { get; set; }

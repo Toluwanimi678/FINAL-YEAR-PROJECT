@@ -17,7 +17,7 @@ namespace SimpleMatcherAPI.Controllers
         [HttpGet("{username}")]
         public async Task<ActionResult<ArtistProfile>> GetArtist(string username)
         {
-            var artist = await _mongoService.GetArtistByUsername(username);
+            var artist = await _mongoService.GetArtistByUsernameAsync(username);
 
             if (artist == null)
             {

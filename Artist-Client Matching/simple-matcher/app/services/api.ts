@@ -7,15 +7,22 @@ type Match = {
 let artists: any[] = [];
 let clients: any[] = [];
 
-export async function signupArtist(artist: any) {
-  await fetch(`${BASE_URL}/api/artist`, {
+export const signupArtist = async (data: any) => {
+  const res = await fetch("http://localhost:5000/api/artists", {
     method: "POST",
     headers: {
-      "Content-Type": "application/json",
+      "Content-Type": "application/json"
     },
-    body: JSON.stringify(artist),
+    body: JSON.stringify(data)
   });
-}
+
+  if (!res.ok) {
+    const error = await res.text();
+    throw new Error(error);
+  }
+
+  return res.json();
+};
 
 export async function addArtistProfile(profile: any) {
   await fetch(`${BASE_URL}/api/artistprofile`, {
