@@ -94,6 +94,7 @@ export default function SignInPage() {
 <input
             type="text"
             name="username"
+            required
             placeholder="Username"
             value={form.username}
             onChange={handleChange}
@@ -103,13 +104,15 @@ export default function SignInPage() {
           <input
             type="password"
             name="password"
+            required
             placeholder="Password"
             value={form.password}
             onChange={handleChange}
             className="p-4 rounded-xl bg-zinc-700 text-white"
           />
 
-          <select
+          <div className="flex flex-col">
+            <select
             name="role"
             value={form.role}
             onChange={handleChange}
@@ -118,6 +121,8 @@ export default function SignInPage() {
             <option value="artist">Artist</option>
             <option value="client">Client</option>
           </select>
+          <div className="text-white text-sm">Pick your role(artist or client)</div>
+          </div>
           <button
             type="submit"
             className="bg-blue-500 hover:bg-blue-600 transition-all p-4 rounded-xl text-white font-semibold"

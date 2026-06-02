@@ -105,7 +105,9 @@ export default function CommissionRequest() {
       (r: any) => r.clientUsername?.toLowerCase() === user.username?.toLowerCase()
     );
 
-    localStorage.setItem("matches", JSON.stringify(myMatches));
+    const latestMatch = myMatches.length > 0 ? [myMatches[myMatches.length - 1]] : [];
+    localStorage.setItem("matches", JSON.stringify(latestMatch));
+    
     localStorage.setItem(
       "requestData",
       JSON.stringify({

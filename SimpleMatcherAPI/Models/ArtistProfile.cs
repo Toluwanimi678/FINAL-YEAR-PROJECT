@@ -41,5 +41,8 @@ namespace SimpleMatcherAPI.Models
 
         [BsonElement("artworkGallery")]
         public List<string>? ArtworkGallery { get; set; }
+
+        [BsonElement("currentActiveCommissions")]
+        public int? CurrentActiveCommissions { get; set; }
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SimpleMatcherAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+edd6a49d9eb4597f1d2d8abb251f524a74009cf1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f75ead72f32790d5d0fb877d8fb6ab47db4b42b")]
 [assembly: System.Reflection.AssemblyProductAttribute("SimpleMatcherAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SimpleMatcherAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

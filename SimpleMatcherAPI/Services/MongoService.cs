@@ -180,13 +180,12 @@ public class MongoService
             .ToListAsync();
 
         // Then return only pending requests from clients not already matched
+        
         return await _commissionRequests
-            .Find(r =>
-                (r.Status == "Pending" || r.Status == null) &&
-                !matchedClients.Contains(r.ClientUsername)
-            )
+            .Find(r => r.Status == "Pending")
             .ToListAsync();
-    }
+    
+}
 
     // Save the matched artist back to a commission request
     public async Task SaveMatchResultAsync(string clientUsername, string artistUsername)
@@ -204,5 +203,20 @@ public class MongoService
         await _commissionRequests.UpdateOneAsync(filter, update);
     }
 
+    public async Task DeleteCommissionRequestAsync(string id)
+    {
+        var filter = Builders<CommissionRequest>.Filter.Eq(r => r.Id, id);
+        await _commissionRequests.DeleteOneAsync(filter);
+    }
 
+    public async Task IncrementActiveCommissionsAsync(string artistUsername)
+    {
+        var filter = Builders<ArtistProfile>.Filter.Eq(
+            a => a.Username, artistUsername
+        );
+        var update = Builders<ArtistProfile>.Update
+            .Inc(a => a.CurrentActiveCommissions, 1);
+
+        await _artistProfiles.UpdateOneAsync(filter, update);
+    }
 }

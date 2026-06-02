@@ -18,7 +18,8 @@ type ArtistProfile = {
 };
 
 type CommissionRequest = {
-  id? : string;
+  id?: string;
+  _id?: string;  
   artistUsername: string;
   clientUsername: string;
   artStyle: string[];
@@ -45,7 +46,7 @@ export default function ArtistProfilePage() {
 
   useEffect(() => {
     const storedClient = localStorage.getItem("client");
-    const storedArtist = localStorage.getItem("artist"); // or whatever key your artist login uses
+    const storedArtist = localStorage.getItem("artist"); 
 
     if (storedArtist) {
       // Artist is logged in — don't show the button
@@ -88,7 +89,7 @@ export default function ArtistProfilePage() {
           }
 
           const data = await response.json();
-          setRequests(data);
+          setRequests(data.filter((r: any) => r.status !== "Matched"));
         } catch (err) {
           console.error("Requests fetch error:", err);
         }
@@ -133,13 +134,16 @@ export default function ArtistProfilePage() {
         (artist.capacity || 1)) *
       100;
 
-    const normalizedRequests = requests.map((r) => ({
-      ...r,
-      clientUsername: r.clientUsername,
-      artistUsername: r.artistUsername,
-    }));
+   const normalizedRequests = requests.map((r: any) => ({
+    ...r,
+    id: r.id || r._id, 
+    clientUsername: r.clientUsername,
+    artistUsername: r.artistUsername,
+  }));
 
-    const handleAccept = async (requestId: string) => {
+   const handleAccept = async (requestId: string) => {
+    console.log("ACCEPTING ID:", requestId);
+  console.log("URL:", `http://localhost:5000/api/commission-requests/accept/${requestId}`);
       try {
         const response = await fetch(
           `http://localhost:5000/api/commission-requests/accept/${requestId}`,
@@ -151,16 +155,37 @@ export default function ArtistProfilePage() {
           return;
         }
 
-        // Optimistically update the UI without a full refetch
         setRequests((prev) =>
-          prev.map((r) =>
-            r.id === requestId ? { ...r, status: "Accepted" } : r
+          prev.map((r: any) =>
+            (r.id || r._id) === requestId ? { ...r, status: "Accepted" } : r
           )
         );
       } catch (err) {
         console.error("Accept error:", err);
       }
     };
+
+const handleReject = async (requestId: string) => {
+  try {
+    const response = await fetch(
+      `http://localhost:5000/api/commission-requests/reject/${requestId}`,
+      { method: "PUT" }
+    );
+
+    if (!response.ok) {
+      console.error("Failed to reject request:", response.status);
+      return;
+    }
+
+    setRequests((prev) =>
+      prev.map((r: any) =>
+        (r.id || r._id) === requestId ? { ...r, status: "Rejected" } : r
+      )
+    );
+  } catch (err) {
+    console.error("Reject error:", err);
+  }
+};
 
 
     const handleCommission = async () => {
@@ -442,18 +467,37 @@ export default function ArtistProfilePage() {
                         "Not specified"}
                     </p>
 
-                    <button
-                      onClick={() => handleAccept(request.id!)}
-                      disabled={request.status === "Accepted"}
-                      className={`mt-4 px-4 py-2 rounded-xl transition-all
-                        ${
-                          request.status === "Accepted"
-                            ? "bg-zinc-600 text-zinc-400 cursor-not-allowed"
-                            : "bg-green-600 hover:bg-green-700"
-                        }`}
-                    >
-                      {request.status === "Accepted" ? "Accepted ✓" : "Accept Request"}
-                    </button>
+                    <div className="flex gap-3 mt-4">
+                      <button
+                        onClick={() => handleAccept(request.id!)}
+                        disabled={request.status === "Accepted" || request.status === "Rejected"}
+                        className={`px-4 py-2 rounded-xl transition-all
+                          ${
+                            request.status === "Accepted"
+                              ? "bg-zinc-600 text-zinc-400 cursor-not-allowed"
+                              : request.status === "Rejected"
+                              ? "bg-zinc-600 text-zinc-400 cursor-not-allowed"
+                              : "bg-green-600 hover:bg-green-700"
+                          }`}
+                      >
+                        {request.status === "Accepted" ? "Accepted ✓" : "Accept"}
+                      </button>
+
+                      <button
+                        onClick={() => handleReject(request.id!)}
+                        disabled={request.status === "Accepted" || request.status === "Rejected"}
+                        className={`px-4 py-2 rounded-xl transition-all
+                          ${
+                            request.status === "Rejected"
+                              ? "bg-zinc-600 text-zinc-400 cursor-not-allowed"
+                              : request.status === "Accepted"
+                              ? "bg-zinc-600 text-zinc-400 cursor-not-allowed"
+                              : "bg-red-500/20 hover:bg-red-500/30 text-red-300"
+                          }`}
+                      >
+                        {request.status === "Rejected" ? "Rejected ✗" : "Reject"}
+                      </button>
+                    </div>
                   </div>
                 ))}
               </div>

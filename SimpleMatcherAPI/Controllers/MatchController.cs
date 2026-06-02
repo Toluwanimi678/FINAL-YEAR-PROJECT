@@ -150,6 +150,13 @@ namespace SimpleMatcherAPI.Controllers
             var requests = await _mongoService.GetCommissionRequestsForArtist(username);
             return Ok(requests);
         }
+
+        [HttpGet("artist-profiles")]
+        public async Task<IActionResult> GetAllArtists()
+        {
+            var artists = await _mongoService.GetAllArtistProfilesAsync();
+            return Ok(artists);
+        }
     }
 
     // DTO to deserialize Python's response
@@ -160,4 +167,6 @@ namespace SimpleMatcherAPI.Controllers
         public int Score { get; set; }
         public bool Matched { get; set; }
     }
+
+
 }

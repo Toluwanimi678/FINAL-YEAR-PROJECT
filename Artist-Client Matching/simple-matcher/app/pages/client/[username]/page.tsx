@@ -10,6 +10,7 @@ export default function ClientProfilePage() {
   const [client, setClient] = useState<any>(null);
   const [requests, setRequests] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
+  const [selectedRequest, setSelectedRequest] = useState<string | null>(null);
 
   const router = useRouter();
 
@@ -40,7 +41,7 @@ export default function ClientProfilePage() {
         }
 
         const requestData = await requestResponse.json();
-        setRequests(requestData);
+        setRequests(requestData.filter((r: any) => r.status !== "Matched"));
       } catch (err) {
         console.error("Error loading profile:", err);
       } finally {
@@ -67,11 +68,31 @@ export default function ClientProfilePage() {
     );
   }
 
-  const normalizedRequests = requests.map((r) => ({
-      ...r,
-      clientUsername: r.clientUsername || (r as any).username,
-      artistUsername: r.artistUsername || (r as any).matchedArtist,
-    }));
+  const normalizedRequests = requests.map((r: any) => ({
+    ...r,
+    id: r.id || r._id, 
+    clientUsername: r.clientUsername,
+    artistUsername: r.artistUsername,
+  }));
+
+    const handleDelete = async (requestId: string) => {
+      try {
+        const response = await fetch(
+          `http://localhost:5000/api/commission-requests/${requestId}`,
+          { method: "DELETE" }
+        );
+
+        if (!response.ok) {
+          console.error("Failed to delete request:", response.status);
+          return;
+        }
+
+        // Remove from UI immediately
+        setRequests((prev) => prev.filter((r) => r.id !== requestId));
+      } catch (err) {
+        console.error("Delete error:", err);
+      }
+    };
 
     const handleLogout = () => {
       localStorage.removeItem("client");
@@ -209,13 +230,53 @@ export default function ClientProfilePage() {
                   </p>
                 </div>
 
+                {/* EXPANDED DETAILS */}
+                {selectedRequest === request.id && (
+                  <div className="mt-6 bg-zinc-700/30 p-4 rounded-2xl space-y-2">
+                    <p>
+                      <span className="text-zinc-400 text-sm">Urgency: </span>
+                      <span className="font-semibold">{request.urgency}</span>
+                    </p>
+                    <p>
+                      <span className="text-zinc-400 text-sm">Specification: </span>
+                      <span className="font-semibold">
+                        {request.specification?.join(", ") || "Not specified"}
+                      </span>
+                    </p>
+                    <p>
+                      <span className="text-zinc-400 text-sm">Management: </span>
+                      <span className="font-semibold">
+                        {request.management || "Not specified"}
+                      </span>
+                    </p>
+                    <p>
+                      <span className="text-zinc-400 text-sm">Created: </span>
+                      <span className="font-semibold">
+                        {request.createdAt
+                          ? new Date(request.createdAt).toLocaleString()
+                          : "N/A"}
+                      </span>
+                    </p>
+                  </div>
+                )}
+
                 {/* ACTION BUTTONS */}
                 <div className="flex gap-3 mt-8">
-                  <button className="bg-zinc-700 hover:bg-zinc-600 transition-all px-5 py-3 rounded-xl">
-                    View Details
+                  <button
+                    onClick={() =>
+                      setSelectedRequest(
+                        selectedRequest === request.id ? null : request.id
+                      )
+                    }
+                    className="bg-zinc-700 hover:bg-zinc-600 transition-all px-5 py-3 rounded-xl"
+                  >
+                    {selectedRequest === request.id ? "Hide Details" : "View Details"}
                   </button>
 
-                  <button className="bg-red-500/20 hover:bg-red-500/30 text-red-300 transition-all px-5 py-3 rounded-xl">
+                  <button
+                    onClick={() => handleDelete(request.id)}
+                    className="bg-red-500/20 hover:bg-red-500/30 text-red-300 transition-all px-5 py-3 rounded-xl"
+                  >
                     Delete
                   </button>
                 </div>

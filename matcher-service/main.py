@@ -208,7 +208,7 @@ def match_batch(data: BatchMatchRequest):
 @app.post("/match-one")
 def match_one(data: BatchMatchRequest):
     """
-    Kept for backwards compatibility with your existing frontend.
+    Kept for backwards compatibility with my existing frontend.
     Treats a single client as the pool and returns top scored artists.
     Upgrade your frontend to use /match-batch for true Gale-Shapley.
     """

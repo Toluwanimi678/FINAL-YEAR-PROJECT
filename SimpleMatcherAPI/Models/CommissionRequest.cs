@@ -5,27 +5,34 @@ public class CommissionRequest
     [BsonId]
     [BsonRepresentation(BsonType.ObjectId)]
     public string? Id { get; set; }
-    [BsonElement("ArtistUsername")]
+
+    [BsonElement("artistUsername")]
     public string ArtistUsername { get; set; }
-    [BsonElement("ClientUsername")]
+
+    [BsonElement("clientUsername")]
     public string ClientUsername { get; set; }
-    [BsonElement("MaxBudget")]
+
+    [BsonElement("maxBudget")]
     public double MaxBudget { get; set; }
-    [BsonElement("Urgency")]
+
+    [BsonElement("urgency")]
     public int Urgency { get; set; }
-    [BsonElement("ArtStyle")]
+
+    [BsonElement("artStyle")]
     public List<string> ArtStyle { get; set; }
 
-    // 👇 ADD THESE
-    [BsonElement("Specification")]
+    [BsonElement("specification")]
     public List<string> Specification { get; set; } = new();
-    [BsonElement("Communication")]
+
+    [BsonElement("communication")]
     public List<string> Communication { get; set; } = new();
-    [BsonElement("Management")]
+
+    [BsonElement("management")]
     public string? Management { get; set; }
 
-    [BsonElement("Status")]
+    [BsonElement("status")]
     public string Status { get; set; } = "Pending";
-    [BsonElement("CreatedAt")]
+
+    [BsonElement("createdAt")]
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 }
